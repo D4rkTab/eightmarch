@@ -1,0 +1,38 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+}
+
+#container {
+    width: 100%;
+    height: 100vh;
+}
+#info {
+    position: absolute;
+    top: 10px;
+    width: 100%;
+    text-align: center;
+    z-index: 100;
+    display:block;
+    color:white;
+
+}
+canvas {
+    display: block;
+    width: 100%;
+    height: 100%;
+}
+
+/* Медиа-запрос для адаптивности к мобильным устройствам */
+@media screen and (max-width: 768px) {
+    /* Примерные стили для мобильных устройств */
+    #container {
+        height: auto;
+    }
+
+    canvas {
+        width: 100%;
+        height: auto;
+    }
+}
