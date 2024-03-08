@@ -18,21 +18,3 @@ body {
     color:white;
 
 }
-canvas {
-    display: block;
-    width: 100%;
-    height: 100%;
-}
-
-/* Медиа-запрос для адаптивности к мобильным устройствам */
-@media screen and (max-width: 768px) {
-    /* Примерные стили для мобильных устройств */
-    #container {
-        height: auto;
-    }
-
-    canvas {
-        width: 100%;
-        height: auto;
-    }
-}

@@ -45,12 +45,14 @@ loader.load(
 
         // Добавляем модель на сцену
         scene.add(model);
+        function updateFontSize(){
+
+        }
         const fontLoader = new FontLoader()
-        let flag = false
         fontLoader.load('tinkoff.json', function (font) {
             const geometry = new TextGeometry('Поздравляю Вас с прекрасным женским днем!', {
                 font: font,
-                size: 0.2, // Уменьшенный размер текста
+                size: window.innerWidth < 768 ? 0.1 : 0.2, // Уменьшенный размер текста
                 height: 0.02, // Высота текста
                 curveSegments: 40,
                 bevelEnabled: false
